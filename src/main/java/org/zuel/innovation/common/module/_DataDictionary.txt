@@ -1,0 +1,70 @@
+Table: bill
+-----------------------------------+--------------+------+-----+---------+---------
+ Field                             | Type         | Null | Key | Default | Remarks 
+-----------------------------------+--------------+------+-----+---------+---------
+ id                                | VARCHAR(255) | NO   | PRI |         |         
+ is_deleted                        | VARCHAR(255) | YES  |     |         |         
+ name                              | VARCHAR(255) | YES  |     |         |         
+ identification                    | VARCHAR(255) | YES  |     |         |         
+ sum_lesson                        | VARCHAR(255) | YES  |     |         |         
+ sum_lesson_time                   | VARCHAR(255) | YES  |     |         |         
+ sum_morning_lesson                | VARCHAR(255) | YES  |     |         |         
+ sum_evening_lesson                | VARCHAR(255) | YES  |     |         |         
+ most_buliding                     | VARCHAR(255) | YES  |     |         |         
+ most_buliding_lesson              | VARCHAR(255) | YES  |     |         |         
+ most_classroom                    | VARCHAR(255) | YES  |     |         |         
+ most_classroom_lesson             | VARCHAR(255) | YES  |     |         |         
+ most_consume_money_canteen        | VARCHAR(255) | YES  |     |         |         
+ most_consume_canteen_money        | VARCHAR(255) | YES  |     |         |         
+ sum_charge                        | VARCHAR(255) | YES  |     |         |         
+ most_consume_money_canteen_date   | VARCHAR(255) | YES  |     |         |         
+ most_consume_money_canteen_oneday | VARCHAR(255) | YES  |     |         |         
+ sum_web_time                      | VARCHAR(255) | YES  |     |         |         
+ sum_web_flow                      | VARCHAR(255) | YES  |     |         |         
+ longest_web_use_timestamp         | VARCHAR(255) | YES  |     |         |         
+ longest_web_use                   | VARCHAR(255) | YES  |     |         |         
+ lastest_web_login                 | VARCHAR(255) | YES  |     |         |         
+ library_appointment_time          | VARCHAR(255) | YES  |     |         |         
+ library_appointment_time_rank     | VARCHAR(255) | YES  |     |         |         
+ sum_appointment                   | VARCHAR(255) | YES  |     |         |         
+ sum_appointment_rank              | VARCHAR(255) | YES  |     |         |         
+ end_achievement                   | VARCHAR(255) | YES  |     |         |         
+-----------------------------------+--------------+------+-----+---------+---------
+
+Table: session
+--------------+--------------+------+-----+---------+---------
+ Field        | Type         | Null | Key | Default | Remarks 
+--------------+--------------+------+-----+---------+---------
+ id           | INT(10)      | NO   |     |         |         
+ created_time | DATETIME(19) | YES  |     |         |         
+ updated_time | DATETIME(19) | YES  |     |         |         
+ is_deleted   | VARCHAR(255) | YES  |     |         |         
+ UserId       | INT(10)      | NO   | PRI |         |         
+ SessionId    | VARCHAR(255) | YES  |     |         |         
+ Type         | VARCHAR(255) | YES  |     |         |         
+ Sex          | VARCHAR(255) | YES  |     |         |         
+ Identity     | VARCHAR(255) | YES  |     |         |         
+--------------+--------------+------+-----+---------+---------
+
+Table: student
+--------------+--------------+------+-----+---------+---------
+ Field        | Type         | Null | Key | Default | Remarks 
+--------------+--------------+------+-----+---------+---------
+ id           | VARCHAR(255) | NO   | PRI |         |         
+ created_time | DATETIME(19) | YES  |     |         |         
+ updated_time | DATETIME(19) | YES  |     |         |         
+ is_deleted   | VARCHAR(255) | YES  |     |         |         
+ account      | VARCHAR(255) | YES  |     |         |         
+--------------+--------------+------+-----+---------+---------
+
+Table: teacher
+--------------+--------------+------+-----+---------+---------
+ Field        | Type         | Null | Key | Default | Remarks 
+--------------+--------------+------+-----+---------+---------
+ id           | VARCHAR(255) | NO   | PRI |         |         
+ created_time | DATETIME(19) | YES  |     |         |         
+ updated_time | DATETIME(19) | YES  |     |         |         
+ is_deleted   | VARCHAR(255) | YES  |     |         |         
+ account      | VARCHAR(255) | YES  |     |         |         
+--------------+--------------+------+-----+---------+---------
+
